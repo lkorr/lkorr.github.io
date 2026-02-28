@@ -3,114 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Theory Apps - lkorr</title>
+    <title>lkorr</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            max-width: 800px;
-            width: 100%;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #fafafa;
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         h1 {
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 2.5em;
-            text-align: center;
-        }
-
-        .subtitle {
-            color: #666;
-            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
             margin-bottom: 40px;
-            font-size: 1.1em;
         }
 
-        .apps-grid {
-            display: grid;
-            gap: 20px;
+        ul {
+            list-style: none;
         }
 
-        .app-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 15px;
-            padding: 25px;
+        li {
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: #0066cc;
             text-decoration: none;
-            color: white;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: block;
         }
 
-        .app-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-        }
-
-        .app-card h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        .app-card p {
-            opacity: 0.9;
-            line-height: 1.5;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 25px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Music Theory Apps</h1>
-        <p class="subtitle">Interactive training tools for microtonal and just intonation music</p>
-
-        <div class="apps-grid">
-            <a href="https://lkorr.github.io/ji-macro-composition-trainer/" class="app-card">
-                <h2>JI Macro Composition Trainer</h2>
-                <p>Practice composing with just intonation intervals and macrotonal harmony</p>
-            </a>
-
-            <a href="https://lkorr.github.io/xen-functional-harmony/" class="app-card">
-                <h2>Xenharmonic Functional Harmony</h2>
-                <p>Explore functional harmony in xenharmonic tuning systems</p>
-            </a>
-
-            <a href="https://lkorr.github.io/interval-cent-trainer/" class="app-card">
-                <h2>Interval Cent Trainer</h2>
-                <p>Train your ear to recognize intervals by their cent values</p>
-            </a>
-
-            <a href="https://lkorr.github.io/microtonal-piano-roll-midi-trainer/" class="app-card">
-                <h2>Microtonal Piano Roll MIDI Trainer</h2>
-                <p>Practice microtonal music with an interactive piano roll interface</p>
-            </a>
-        </div>
-    </div>
+    <h1>Music Theory Apps</h1>
+    <ul>
+        <li><a href="https://lkorr.github.io/xen-functional-harmony/">Xenharmonic Functional Harmony</a></li>
+        <li><a href="https://lkorr.github.io/ji-macro-composition-trainer/">JI Macro Composition Trainer</a></li>
+        <li><a href="https://lkorr.github.io/interval-cent-trainer/">Interval Cent Trainer</a></li>
+        <li><a href="https://lkorr.github.io/microtonal-piano-roll-midi-trainer/">Microtonal Piano Roll MIDI Trainer</a></li>
+    </ul>
 </body>
 </html>
